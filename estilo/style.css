@@ -8,19 +8,24 @@
 }
 
 body {
+    
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .mobile {
     background-color: #F6D050;
-    height: 600px;
-    width: 400px;
+    min-height: 600px;
+    min-width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
 }
 
 .mobile .card {
@@ -98,6 +103,81 @@ body {
 
 .desktop {
     background-color: #F6D050;
+    min-height: 700px;
+    min-width: 900px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.desktop .card {
+    background-color: white;
+    height: auto;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 0px black;
+    border: 1.5px solid black;
+}
+
+.desktop .img {
+    background-image: url("illustration-article.svg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
     height: 200px;
-    width: 200px;
+    width: 400px;
+}
+
+.desktop .label {
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #F6D050;
+    font-family: "Figtree", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.desktop .info {
+    margin-top: 15px;
+    font-family: "Figtree", sans-serif;
+    font-weight: light;
+    font-size: 1em;
+}
+
+.desktop h1 {
+    margin-top: 15px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 850;
+    font-size: 1.5em;
+}
+
+.desktop .description {
+    margin-top: 15px;
+    line-height: 1.5;
+    font-family: "Figtree", sans-serif;
+    font-size: 1.1em;
+    color: rgb(113, 113, 113);
+}
+
+.desktop footer {
+    margin-top: 15px;
+    display: flex;
+}
+
+.desktop footer img {
+    height: 50px;
+    width: 50px;
+}
+
+.desktop .perfil {
+    margin-left: 20px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 1.1em;
 }
